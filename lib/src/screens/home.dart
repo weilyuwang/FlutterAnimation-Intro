@@ -1,3 +1,4 @@
+import 'package:animation_intro/src/widgets/cat.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -12,6 +13,11 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: Text('Animation'),
       ),
+      body: _buildAnimation(),
     );
+  }
+
+  Widget _buildAnimation() {
+    return Cat();
   }
 }
